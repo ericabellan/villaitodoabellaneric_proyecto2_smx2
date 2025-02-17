@@ -1,97 +1,147 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Archivo', sans-serif;
   margin: 0;
   padding: 0;
-  text-align: center;
+  background-color: #fff;
+  color: #000;
 }
 
 header {
-  background: white;
-  padding: 15px 30px;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid #ddd;
+  align-items: center;
+  padding: 20px 40px;
+  background: #fff;
+  border-bottom: 1px solid #ccc;
 }
 
 .logo img {
   height: 40px;
 }
 
-nav {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  justify-content: space-between;
-}
-
-.nav-links {
+.menu {
   list-style: none;
   display: flex;
   gap: 30px;
-  padding: 0;
-  margin: 0;
 }
 
-.nav-links li {
+.menu li {
   display: inline;
 }
 
-.nav-links li a {
+.menu a {
   text-decoration: none;
   color: black;
   font-weight: bold;
+  font-size: 14px;
 }
 
-.icons img {
-  height: 25px;
-  margin-left: 15px;
+.icons i {
+  font-size: 20px;
+  cursor: pointer;
 }
 
-.hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 120px 30px 50px;
-  margin-top: 80px;
+#hero {
+  text-align: left;
+  padding: 60px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.hero h1 {
+  font-size: 3em;
+  font-weight: bold;
 }
 
 .hero-content {
-  width: 70%;
-  text-align: left;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-.hero-content h1 {
-  font-size: 3rem;
-  width: 50%;
+.btn-main {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 
-.hero-content .description {
-  font-size: 1.2rem;
-  color: #555;
-  width: 45%;
+.btn-main:hover {
+  background-color: gray;
 }
 
 .hero-image {
-  width: 70%;
-  margin-top: 20px;
+  position: relative;
+  width: 100%;
 }
 
 .hero-image img {
   width: 100%;
-  max-width: 900px;
-  display: block;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 3px solid rgb(250, 250, 250);
+}
+
+.hero-image .tag {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: pink;
+  padding: 5px 10px;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.collection {
+  text-align: left;
+  padding: 60px;
+  max-width: 1200px;
   margin: auto;
 }
 
+.collection h2 {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.car-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid transparent;
+}
+
+.car-item:first-child img {
+  border: 2px solid rgb(255, 255, 255);
+}
+
+.btn-secondary {
+  display: block;
+  margin: 20px auto;
+  background: white;
+  border: 1px solid black;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-secondary:hover {
+  background: black;
+  color: white;
+}
 
 
 
